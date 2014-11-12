@@ -23,6 +23,7 @@ public class Demo {
 			WeiboMapper weiboMapper = sqlSession.getMapper(WeiboMapper.class);
 			Weibo weibo = new Weibo("weibo", "112", 56, 74, 5, " text", 34, "14", 4, false, "http:");
 			weiboMapper.insertWeiboData(weibo);
+			System.out.println("insert succeed!");
 			System.out.println(weiboMapper.getCount());
 			
 		} finally {
